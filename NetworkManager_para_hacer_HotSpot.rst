@@ -32,9 +32,9 @@ Primero borramos todas las conexiones posibles::
 	    if [ "$(nmcli -g connection.id connection show $uuid)" = "MiHotspot" ]; then
 	        nmcli connection delete $uuid
 	    fi
-done
+	done
 
-::
+Hacemos la configuración manual::
 
 	# Eliminar conexión existente si hay
 	nmcli connection delete "MiDebianHotspot" 2>/dev/null
