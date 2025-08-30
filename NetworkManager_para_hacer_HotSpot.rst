@@ -21,6 +21,19 @@ Verificar el estado::
 
 Si falla, configurar manualmente
 --------------------------------
+
+Primero borramos todas las conexiones posibles::
+
+	# Listar todas las conexiones llamadas MiHotspot
+	nmcli connection show | grep MiHotspot
+	
+	# Eliminar TODAS las conexiones con ese nombre
+	for uuid in $(nmcli -g UUID connection show | grep -v "^\s*$"); do
+	    if [ "$(nmcli -g connection.id connection show $uuid)" = "MiHotspot" ]; then
+	        nmcli connection delete $uuid
+	    fi
+done
+
 ::
 
 	# Eliminar conexión existente si hay
