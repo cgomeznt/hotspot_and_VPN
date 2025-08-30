@@ -13,7 +13,7 @@ Usando NetworkManager para hacer HotSpot(Recomendado)
 
 Crear un hotspot::
 
-	sudo nmcli dev wifi hotspot ifname wlan0 ssid "MiDebianHotspot" password "micontraseña"
+	sudo nmcli dev wifi hotspot ifname wlx488f4cff32ac ssid "MiDebianHotspot" password "micontraseña"
 
 Verificar el estado::
 
