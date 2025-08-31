@@ -1,6 +1,8 @@
 Usando NetworkManager para hacer HotSpot(Recomendado)
 ==========================================================
 
+Debes temer dos adaptadores, uno por RJ45 y el WIFI, el RJ45 es el que te darás salida al internet y el WIFI será para hacer el HotSpot.
+
 1. Instalar NetworkManager (si no está instalado)
 ----------------------------------------------------
 ::
